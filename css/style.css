@@ -126,6 +126,14 @@ img {
 
 .hero {
   background: #2e2f42;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url("../images/main-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   height: 618px;
   padding: 188px 0;
 }
@@ -167,7 +175,7 @@ img {
 
 /* Features */
 
-.features{
+.features {
   padding-top: 120px;
   padding-bottom: 120px;
 }
@@ -183,9 +191,9 @@ img {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-  }
-  
-.features-subtitle{
+}
+
+.features-subtitle {
   margin-bottom: 8px;
 }
 
@@ -196,6 +204,17 @@ img {
 
 .features-item {
   width: calc((100% - 72px) / 4);
+}
+
+.feature-icon {
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  width: 264px;
+  height: 112px;
+  background: #f4f4fd;
+  padding: 24px 100px;
+  margin-bottom: 8px;
+  fill: #2e2f42;
 }
 
 /* Team */
@@ -210,9 +229,8 @@ img {
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-worker{
+.team-worker {
   padding: 32px 0;
-
 }
 
 .team-title {
@@ -233,6 +251,22 @@ img {
 
 .team-description {
   text-align: center;
+}
+
+.team-worker{
+}
+
+.team-icon {
+  width: 40px;
+  height: 40px;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  margin-top: 8px;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  fill: #fff;
 }
 
 /* Features */
@@ -265,8 +299,9 @@ img {
 
 /* Portfolio */
 
-.portfolio{
-  padding-top: 120px; padding-bottom: 120px;
+.portfolio {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .portfolio-title {
@@ -280,7 +315,7 @@ img {
   column-gap: 24px;
 }
 
-.portfolio-subtitle{
+.portfolio-subtitle {
   margin-bottom: 8px;
 }
 
@@ -288,13 +323,11 @@ img {
   width: calc((100% - 48px) / 3);
 }
 
-.div-portfolio{
+.div-portfolio {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
 }
-
-
 
 /* Footer */
 
@@ -303,7 +336,7 @@ img {
   padding: 100px 0;
 }
 
-.footer-logo{
+.footer-logo {
   display: inline-block;
   margin-bottom: 16px;
 }
@@ -315,4 +348,18 @@ img {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   width: 264px;
+}
+
+.footer-title{
+  font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: #fff;
+}
+
+.footer-list{
+  display: flex;
+  padding-top: 100px;
+  gap: 120px;
 }
