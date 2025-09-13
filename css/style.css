@@ -121,6 +121,7 @@ img {
   background-color: #404bbf;
   width: 100%;
   height: 4px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-contacts {
@@ -160,6 +161,7 @@ img {
   background-size: cover;
   height: 618px;
   padding: 188px 0;
+  max-width: 1440px;
 }
 
 .hero-title {
@@ -190,6 +192,7 @@ img {
   border: none;
   margin-right: auto;
   margin-left: auto;
+  background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-btn:hover,
@@ -241,6 +244,17 @@ img {
   fill: #2e2f42;
 }
 
+.feature-icon-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
+  background-color: #f4f4fd;
+  border-radius: 4px;
+  border: 1px solid #8e8f99;
+  margin-bottom: 8px;
+}
+
 /* Team */
 
 .team {
@@ -251,6 +265,7 @@ img {
 .team-item {
   background-color: #ffffff;
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .team-worker {
@@ -281,18 +296,34 @@ img {
 }
 
 .team-icon {
-  width: 40px;
-  height: 40px;
-  background-color: #4d5ae5;
-  border-radius: 50%;
-  margin-top: 8px;
-  display: inline-block;
-  align-items: center;
-  justify-content: center;
-  gap: 24px;
-  fill: #fff;
+  fill: #f4f4fd;
 }
 
+.team-list-icons{
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.team-item-icons{
+  width: 40px;
+  height: 40px;
+}
+
+.team-link-icon{
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-link-icon:hover,
+.team-link-icon:focus{
+  background-color: #404bbf;
+}
 
 /* Features */
 
@@ -347,6 +378,7 @@ img {
 .portfolio-item {
   width: calc((100% - 48px) / 3);
   position: relative;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .div-portfolio {
@@ -362,6 +394,7 @@ overflow: hidden;
 
 .portfolio-item:hover .portfolio-effect{
   transform: translateY(0);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);;
 }
 
 
@@ -384,6 +417,15 @@ transition: transform 0.3s ease-in-out;
 }
 
 /* Footer */
+
+.footer-div{
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-logo-paragraph{
+  margin-right: 120px;
+}
 
 .footer-page {
   background-color: #2e2f42;
